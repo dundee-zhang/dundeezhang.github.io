@@ -69,6 +69,19 @@
         margin: auto 2vmin auto auto;
         font-size: calc(8px + 2vmin);
     }
+
+    .hide-button {
+        font-size: calc(5px + 2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 1.5vmin 4vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(166, 237, 252);
+        margin: 1vmin 0 2vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -158,12 +171,22 @@
     .card-container-works {
         margin: auto 10vw;
     }
+
+    .hide-button {
+        font-size: calc(4px + 1.2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 0.4vmin 2vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(166, 237, 252);
+        margin: 0 0 1vmin 0;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
 }
 /* dark mode*/
 @media (prefers-color-scheme: dark) {
-    .App-content {
-        background-color: #252525;
-    }
     .project-title {
         color: white;
     }
@@ -197,6 +220,16 @@
     }
 
     .github-button:hover {
+        background-color: rgb(72, 72, 72);
+        color: white;
+    }
+    
+    .hide-button {
+        color: white;
+        background-color: rgb(60, 60, 60);
+    }
+
+    .hide-button:hover {
         background-color: rgb(72, 72, 72);
         color: white;
     }

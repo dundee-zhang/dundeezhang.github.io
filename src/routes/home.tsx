@@ -4,10 +4,12 @@ import BlogComp from "./components/home/blogcomp";
 import Contact from "./components/home/contact";
 import Footer from "./components/footer";
 import TableOfContents from "./components/home/tableofcontent";
+import MainBackground from "./components/home/background";
 
 export default function Home() {
     return (
         <div>
+            <MainBackground />
             <TableOfContents />
             <Intro />
             <Works />
