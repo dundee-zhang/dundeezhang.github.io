@@ -11,7 +11,7 @@ const resumeClick = () => {
 
 export default function Intro() {
     return (
-        <div>
+        <div id="intro">
             <header className="App-header">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}

@@ -32,7 +32,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="content-container-center">
+        <div className="content-container-center" id="contactform">
             <div className="contact-form-container">
                 <h2>Contact Me</h2>
                 <form

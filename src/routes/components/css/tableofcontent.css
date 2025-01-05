@@ -1,0 +1,28 @@
+@media only screen and (max-width: 850px) {
+    .table-of-content-wrapper {
+        display: none;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .table-of-content-wrapper {
+        position: fixed;
+        margin: 5vmin 5vmin;
+        list-style-type: none;
+        text-align: left;
+        z-index: 999;
+    }
+
+    .table-of-content-text:hover {
+        color: rgb(104, 104, 104);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        transform: scale(1.2);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .table-of-content-text:hover {
+            color: rgb(204, 204, 204);
+        }
+    }
+}

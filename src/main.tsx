@@ -8,8 +8,7 @@ import ArtZero from "./routes/components/blog/articles/0";
 import ArtOne from "./routes/components/blog/articles/1";
 import ArtTwo from "./routes/components/blog/articles/2";
 
-import "./routes/components/css/index.css";
-
+import "./routes/components/css/tableofcontent.css";
 import "./routes/components/css/index.css";
 import "./routes/components/css/root.css";
 import "./routes/components/css/works.css";

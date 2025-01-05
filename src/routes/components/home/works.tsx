@@ -25,7 +25,7 @@ const HeaderAnimate = {
 
 function Works() {
     return (
-        <div className="Body">
+        <div className="Body" id="projects">
             <body className="App-content">
                 <motion.div
                     className="card-container"

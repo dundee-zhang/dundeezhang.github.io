@@ -43,7 +43,7 @@ const BlogButtonAnimate = {
 
 export default function BlogComp() {
     return (
-        <div className="Blog">
+        <div className="Blog" id="blog">
             <body className="blog-intro">
                 <motion.div
                     className="card-container"
