@@ -321,6 +321,10 @@ p.highlight-color {
 }
 
 @media (prefers-color-scheme: dark) {
+    .blog-container {
+        background-color: #252525;
+    }
+
     .blog-header {
         background-color: rgb(8, 8, 8);
     }
@@ -394,4 +398,3 @@ img.vert-img {
 p.desc {
     font-size: calc(10px + 1vmin);
 }
-
