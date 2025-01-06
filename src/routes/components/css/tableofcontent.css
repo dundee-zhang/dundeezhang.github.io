@@ -12,6 +12,7 @@
         display: none;
     }
     .mobile-nav {
+        z-index: 999;
         position: fixed;
         left: 50%;
         width: 100%;
