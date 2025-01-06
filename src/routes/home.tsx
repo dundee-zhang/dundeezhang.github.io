@@ -6,10 +6,12 @@ import Footer from "./components/footer";
 import TableOfContents from "./components/home/tableofcontent";
 import MainBackground from "./components/home/background";
 import About from "./components/home/about";
+import ProfilePicture from "./components/home/profilepicture";
 
 export default function Home() {
     return (
         <div>
+            <ProfilePicture />
             <MainBackground />
             <TableOfContents />
             <Intro />

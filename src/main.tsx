@@ -17,6 +17,7 @@ import "./routes/components/css/works.css";
 import "./routes/components/css/blogcomp.css";
 import "./routes/components/css/contact.css";
 import "./routes/components/css/footer.css";
+import "./routes/components/css/profilepicture.css";
 
 import "./routes/components/css/blog.css";
 
