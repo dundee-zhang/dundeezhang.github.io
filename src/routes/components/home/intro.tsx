@@ -23,7 +23,7 @@ export default function Intro() {
                     </div>
                 </motion.div>
                 <div className="dundee-container">
-                    <h1 className="dundee-name"><span>Hello! I'm Dundee,</span></h1>
+                    <h1 className="dundee-name"><span>Hello! I'm Dundee.</span></h1>
                 </div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -35,7 +35,7 @@ export default function Intro() {
                     }}
                 >
                     <p className="website-intro-top">
-                        a{" "}
+                        Welcome to my website! I'm a software developer studying{" "}
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -44,7 +44,7 @@ export default function Intro() {
                         >
                             <span>CS</span>
                         </a>{" "}
-                        student at the{" "}
+                        at the{" "}
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -52,7 +52,7 @@ export default function Intro() {
                             href="https://uwaterloo.ca"
                         >
                             <span>University of Waterloo</span>
-                        </a>
+                        </a>.
                     </p>
                 </motion.div>
 

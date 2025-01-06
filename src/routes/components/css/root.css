@@ -282,6 +282,7 @@ span {
         margin: 2.5vmin 0 1.5vmin;
         padding: 0;
         overflow: hidden;
+        display: none; /* remove profile picture on desktop*/
     }
 
     .resume-button {
