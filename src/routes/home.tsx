@@ -5,6 +5,7 @@ import Contact from "./components/home/contact";
 import Footer from "./components/footer";
 import TableOfContents from "./components/home/tableofcontent";
 import MainBackground from "./components/home/background";
+import About from "./components/home/about";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <MainBackground />
             <TableOfContents />
             <Intro />
+            <About />
             <Works />
             <BlogComp />
             <Contact />

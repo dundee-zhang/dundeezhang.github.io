@@ -30,7 +30,7 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.5,
-                        delay: 0.8,
+                        delay: 0.5,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
@@ -44,7 +44,7 @@ export default function Intro() {
                         >
                             <span>CS</span>
                         </a>{" "}
-                        at the{" "}
+                        @{" "}
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -63,7 +63,7 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 1.1,
+                                delay: 0.7,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
@@ -84,7 +84,7 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 1.4,
+                                delay: 0.9,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
@@ -105,7 +105,7 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 1.7,
+                                delay: 1.1,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
@@ -126,7 +126,7 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.4,
-                        delay: 2.0,
+                        delay: 1.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >

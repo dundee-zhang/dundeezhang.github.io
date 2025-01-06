@@ -11,6 +11,7 @@ import ArtTwo from "./routes/components/blog/articles/2";
 import "./routes/components/css/tableofcontent.css";
 import "./routes/components/css/background.css";
 import "./routes/components/css/index.css";
+import "./routes/components/css/about.css";
 import "./routes/components/css/root.css";
 import "./routes/components/css/works.css";
 import "./routes/components/css/blogcomp.css";
