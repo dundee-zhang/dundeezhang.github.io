@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <div>
             <footer className="app-footer">
-                <p>Dundee Zhang 2025 - All Rights Reserved</p>
+                <span><p>Dundee Zhang 2025 - All Rights Reserved</p></span>
                 <ul className="social-cons">
                     <li>
                         <div className="circle-div-footer">

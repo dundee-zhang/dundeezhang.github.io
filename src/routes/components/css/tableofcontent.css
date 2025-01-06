@@ -1,3 +1,13 @@
+.table-of-content-text,
+.table-of-content-text:visited {
+    color: rgb(18, 100, 112);
+}
+
+.table-of-content-text:hover {
+    color: rgb(8, 45, 51);
+}
+
+
 @media only screen and (max-width: 850px) {
     .table-of-content-wrapper {
         display: none;
@@ -6,10 +16,15 @@
 @media only screen and (min-width: 850px) {
     .table-of-content-wrapper {
         position: fixed;
-        margin: 5vmin 5vmin;
+        margin: 5vmin 3vmin;
         list-style-type: none;
         text-align: left;
         z-index: 999;
+        font-weight: bold;
+    }
+
+    ul.table-of-content {
+        margin: 0.5vh;
     }
 
     .table-of-content-text:hover {
@@ -21,8 +36,14 @@
     }
 
     @media (prefers-color-scheme: dark) {
+        .table-of-content-text,
+        .table-of-content-text:visited {
+            color: rgb(187, 187, 187);
+        }
+
         .table-of-content-text:hover {
-            color: rgb(204, 204, 204);
+            color: rgb(255, 255, 255);
         }
     }
 }
+

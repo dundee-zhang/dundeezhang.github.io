@@ -1,19 +1,15 @@
 import pfp from "/src/img/specimenB.jpeg";
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 
 const resumeClick = () => {
-    window.open(
-        "/resume.pdf",
-        "_blank"
-    );
+    window.open("/resume.pdf", "_blank");
 };
 
 export default function Intro() {
     return (
         <div id="intro">
             <header className="App-header">
-                <motion.div
+            <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -26,10 +22,9 @@ export default function Intro() {
                         <img src={pfp} className="App-logo" alt="profile" />
                     </div>
                 </motion.div>
-                <TypeAnimation
-                    sequence={[500, "Hello! I'm Dundee,"]}
-                    className="dundee-name"
-                ></TypeAnimation>
+                <div className="dundee-container">
+                    <h1 className="dundee-name"><span>Hello! I'm Dundee,</span></h1>
+                </div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -47,7 +42,7 @@ export default function Intro() {
                             className="csText"
                             href="https://uwaterloo.ca/future-students/programs/computer-science"
                         >
-                            CS
+                            <span>CS</span>
                         </a>{" "}
                         student at the{" "}
                         <a
@@ -56,7 +51,7 @@ export default function Intro() {
                             className="schoolText"
                             href="https://uwaterloo.ca"
                         >
-                            University of Waterloo
+                            <span>University of Waterloo</span>
                         </a>
                     </p>
                 </motion.div>
@@ -72,15 +67,15 @@ export default function Intro() {
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
-                            <div className="circle-div">
-                                <a
-                                    rel="noreferrer"
-                                    href="https://www.linkedin.com/in/dundeezhang/"
-                                    target="_blank"
-                                >
+                            <a
+                                rel="noreferrer"
+                                href="https://www.linkedin.com/in/dundeezhang/"
+                                target="_blank"
+                            >
+                                <div className="circle-div">
                                     <i className="fa-brands fa-linkedin-in intro-icons"></i>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </motion.div>
                     </li>
                     <li>
@@ -93,15 +88,15 @@ export default function Intro() {
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
-                            <div className="circle-div">
-                                <a
-                                    rel="noreferrer"
-                                    href="https://github.com/dundeezhang"
-                                    target="_blank"
-                                >
+                            <a
+                                rel="noreferrer"
+                                href="https://github.com/dundeezhang"
+                                target="_blank"
+                            >
+                                <div className="circle-div">
                                     <i className="fa-brands fa-github intro-icons"></i>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </motion.div>
                     </li>
                     <li>
@@ -114,15 +109,15 @@ export default function Intro() {
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
-                            <div className="circle-div">
-                                <a
-                                    rel="noreferrer"
-                                    href="mailto:contact@dundeezhang.com"
-                                    target="_blank"
-                                >
+                            <a
+                                rel="noreferrer"
+                                href="mailto:contact@dundeezhang.com"
+                                target="_blank"
+                            >
+                                <div className="circle-div">
                                     <i className="fa-regular fa-envelope intro-icons"></i>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </motion.div>
                     </li>
                 </ul>
