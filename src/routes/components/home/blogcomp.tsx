@@ -49,7 +49,7 @@ export default function BlogComp() {
                     className="card-container"
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ amount: 0.8 }}
                     variants={HeaderAnimate}
                 >
                     <h2 className="header-name-blog">My Blog</h2>
@@ -59,7 +59,7 @@ export default function BlogComp() {
                     className="card-container"
                     initial="offscreen"
                     whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
+                    viewport={{ amount: 0.8 }}
                     variants={BlogButtonAnimate}
                 >
                     <div>

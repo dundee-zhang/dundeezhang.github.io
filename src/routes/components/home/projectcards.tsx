@@ -127,7 +127,7 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
                 className="card-container"
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ amount: 0.6 }}
                 variants={CardDiv}
             >
                 <Card className="project-cards">
