@@ -22,8 +22,8 @@ const CardDiv: Variants = {
         scale: 1,
         transition: {
             type: "spring",
-            bounce: 0.2,
-            duration: 1,
+            bounce: 0,
+            duration: 0.5,
         },
     },
 };
@@ -127,7 +127,7 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
                 className="card-container"
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ amount: 0.6 }}
+                viewport={{ amount: 0.5 }}
                 variants={CardDiv}
             >
                 <Card className="project-cards">

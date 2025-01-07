@@ -42,7 +42,7 @@ export default function TableOfContents() {
                             className="table-of-content-text"
                             href="#intro"
                         >
-                            Top
+                            <span className="nav-span">Top</span>
                         </a>
                     </ul>
                 </motion.div>
@@ -61,7 +61,7 @@ export default function TableOfContents() {
                             onClick={resumeClick}
                             className="table-of-content-text"
                         >
-                            Resume
+                            <span className="nav-span">Resume</span>
                         </a>
                     </ul>
                 </motion.div>
@@ -81,7 +81,7 @@ export default function TableOfContents() {
                             className="table-of-content-text"
                             href="#about"
                         >
-                            About Me
+                            <span className="nav-span">About Me</span>
                         </a>
                     </ul>
                 </motion.div>
@@ -101,7 +101,7 @@ export default function TableOfContents() {
                             className="table-of-content-text"
                             href="#projects"
                         >
-                            Projects
+                            <span className="nav-span">Projects</span>
                         </a>
                     </ul>
                 </motion.div>
@@ -121,7 +121,7 @@ export default function TableOfContents() {
                             className="table-of-content-text"
                             href="/blog"
                         >
-                            Blog
+                            <span className="nav-span">Blog</span>
                         </a>
                     </ul>
                 </motion.div>
@@ -141,7 +141,7 @@ export default function TableOfContents() {
                             className="table-of-content-text"
                             href="#contactform"
                         >
-                            Contact
+                            <span className="nav-span">Contact</span>
                         </a>
                     </ul>
                 </motion.div>

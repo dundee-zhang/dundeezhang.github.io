@@ -18,8 +18,8 @@ const HeaderAnimate = {
         scale: 1,
         transition: {
             type: "spring",
-            bounce: 0.2,
-            duration: 1,
+            bounce: 0,
+            duration: 0.5,
         },
     },
 };

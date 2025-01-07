@@ -5,7 +5,7 @@ import { useForm, ValidationError } from "@formspree/react";
 const HeaderAnimate = {
     offscreen: {
         y: 20,
-        opacity: 0,
+        opacity: 0.5,
         scale: 0.9,
     },
     onscreen: {
@@ -14,8 +14,8 @@ const HeaderAnimate = {
         scale: 1,
         transition: {
             type: "spring",
-            bounce: 0.2,
-            duration: 1,
+            bounce: 0,
+            duration: 0.5,
         },
     },
 };
