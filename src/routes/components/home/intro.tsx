@@ -14,7 +14,7 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.6,
-                        delay: 0.3,
+                        delay: 0,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >

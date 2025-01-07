@@ -147,7 +147,7 @@ span {
         width: 80vmin;
         height: fit-content;
         pointer-events: none;
-        margin: 20vmin 0 7vmin;
+        margin: 20vh 7vmin 2.5vh;
         padding: 0;
         overflow: hidden;
     }
