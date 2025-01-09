@@ -10,6 +10,10 @@ const viewProject = (repo: string): undefined => {
     window.open(`https://github.com/dundeezhang/${repo}`, "_blank");
 };
 
+const openLink = (link: string): undefined => {
+    window.open(link, "_blank");
+};
+
 const CardDiv: Variants = {
     offscreen: {
         y: 10,
@@ -35,9 +39,20 @@ interface Datas {
     pic: string;
     repository: string;
     buttontext: string;
+    hideclass: string;
+    externallink: string;
 }
 
-const worksData: [string, string, string, string, string, string][] = [
+const worksData: [
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    string
+][] = [
     [
         "dundeezhang.com",
         "TypeScript, React, CSS",
@@ -45,6 +60,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "website.png",
         "dundeezhang.github.io",
         "Github Repository",
+        "",
+        "https://dundeezhang.com",
     ],
     [
         "dundeezhang.com/blog",
@@ -53,22 +70,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "blog.png",
         "dundeezhang.github.io",
         "Github Repository",
-    ],
-    [
-        "datingdo.singles",
-        "Bootstrap, HTML, CSS",
-        "Grade 10 business final project written under time constraints.",
-        "datingdo.png",
-        "datingdo.single",
-        "Github Repository",
-    ],
-    [
-        "Contest Solutions",
-        "C++, Java, Python",
-        "Repository to store most of my solutions for CS problems.",
-        "compcode.png",
-        "Contests",
-        "Github Repository",
+        "",
+        "https://dundeezhang.com/blog",
     ],
     [
         "NHSCSC Website",
@@ -77,6 +80,38 @@ const worksData: [string, string, string, string, string, string][] = [
         "nhscsc.png",
         "website-nhscc",
         "Github Repository",
+        "",
+        "https://nhscc.vercel.app/",
+    ],
+    [
+        "Contest Solutions",
+        "C++, Java, Python",
+        "Repository to store most of my solutions for CS problems.",
+        "compcode.png",
+        "Contests",
+        "Github Repository",
+        "hide-button-class",
+        "",
+    ],
+    [
+        "ReadMe",
+        "JavaScript, Markdown, React",
+        "View markdown files in a more readable format online.",
+        "readmd.png",
+        "readmd",
+        "Github Repository",
+        "",
+        "https://readmd.dhz.app/",
+    ],
+    [
+        "datingdo.singles",
+        "Bootstrap, HTML, CSS",
+        "Grade 10 business final project written under time constraints.",
+        "datingdo.png",
+        "datingdo.single",
+        "Github Repository",
+        "",
+        "https://dundeezhang.github.io/datingdo.single/",
     ],
     [
         "dzPass",
@@ -85,6 +120,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "dzpass.png",
         "dzPass",
         "Github Repository",
+        "hide-button-class",
+        "",
     ],
     [
         "Better-Calculator",
@@ -93,6 +130,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "bettercalc.png",
         "Better-Calculator",
         "Github Repository",
+        "hide-button-class",
+        "",
     ],
     [
         "dundeezhangv1",
@@ -101,6 +140,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "dundeezhangv1.png",
         "dundeezhangv1",
         "Github Repository",
+        "",
+        "https://dundeezhang.github.io/dundeezhangv1/",
     ],
     [
         "Submarine Intercept Sim",
@@ -109,6 +150,8 @@ const worksData: [string, string, string, string, string, string][] = [
         "haida.jpg",
         "Submarine-Intercept-Simulator",
         "Github Repository",
+        "hide-button-class",
+        "",
     ],
     [
         "More Projects",
@@ -117,10 +160,21 @@ const worksData: [string, string, string, string, string, string][] = [
         "future.jpg",
         "",
         "Github Profile",
+        "hide-button-class",
+        "",
     ],
 ];
 
-function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
+function WorksCard({
+    title,
+    langs,
+    desc,
+    pic,
+    repository,
+    buttontext,
+    hideclass,
+    externallink,
+}: Datas) {
     return (
         <Col>
             <motion.div
@@ -154,6 +208,14 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
                             <i className="fa-brands fa-github github-button-icon"></i>
                             {buttontext}
                         </button>
+                        <button
+                            type="button"
+                            onClick={() => openLink(externallink)}
+                            className={hideclass}
+                            id="external-link-button"
+                        >
+                            <i className="fa fa-external-link"></i>
+                        </button>
                     </Card.Body>
                 </Card>
             </motion.div>
@@ -163,7 +225,16 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
 
 export default function WorkCards() {
     return worksData.map(
-        ([title, langs, desc, pic, repository, buttontext]) => (
+        ([
+            title,
+            langs,
+            desc,
+            pic,
+            repository,
+            buttontext,
+            hideclass,
+            externallink,
+        ]) => (
             <WorksCard
                 title={title}
                 langs={langs}
@@ -171,6 +242,8 @@ export default function WorkCards() {
                 pic={pic}
                 repository={repository}
                 buttontext={buttontext}
+                hideclass={hideclass}
+                externallink={externallink}
                 key={null}
             />
         )

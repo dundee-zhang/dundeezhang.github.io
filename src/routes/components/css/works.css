@@ -1,3 +1,7 @@
+.hide-button-class {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .project-title {
         font-size: calc(8px + 4vmin);
@@ -60,6 +64,19 @@
         border-color: rgba(255, 255, 255, 0);
         background-color: rgb(166, 237, 252);
         margin: 2vmin 0 0;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    #external-link-button {
+        font-size: calc(8px + 2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 2vmin 5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        margin: 2vmin 0 0 2vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
@@ -159,6 +176,24 @@
         font-style: normal;
     }
 
+    #external-link-button {
+        font-size: calc(8px + 1.2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 1vmin 2.5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        margin: 2vmin 0 0 2vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    #external-link-button:hover {
+        background-color: rgb(212, 250, 255);
+        color: rgb(13, 37, 58);
+    }
+
     .github-button:hover {
         color: rgb(13, 37, 58);
         background-color: rgb(150, 220, 230);
@@ -223,7 +258,17 @@
         background-color: rgb(72, 72, 72);
         color: white;
     }
-    
+
+    #external-link-button {
+        color: white;
+        background-color: rgb(60, 60, 60);
+    }
+
+    #external-link-button:hover {
+        background-color: rgb(72, 72, 72);
+        color: white;
+    }
+
     .hide-button {
         color: white;
         background-color: rgb(60, 60, 60);

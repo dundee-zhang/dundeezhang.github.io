@@ -102,6 +102,7 @@ span {
     p {
         font-size: calc(10px + 1vmin);
         margin: 0 3vmin;
+        font-weight: 500;
     }
 
     p.website-intro-top {
