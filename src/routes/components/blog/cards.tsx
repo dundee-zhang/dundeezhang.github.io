@@ -15,6 +15,12 @@ interface Datas {
 
 const blogData: [string, string, string, string][] = [
     [
+        "Website Updates",
+        "January 9, 2025",
+        "Looking back at the changes I made to my website in the past years.",
+        "website-updates",
+    ],
+    [
         "CS 146 Tutorial 1 Notes",
         "January 8, 2025",
         "Includes a brief overview of the language Haskell (the language used for the tutorials).",
