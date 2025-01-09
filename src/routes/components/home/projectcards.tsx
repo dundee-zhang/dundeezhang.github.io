@@ -58,7 +58,7 @@ const worksData: [
         "TypeScript, React, CSS",
         "An introduction website to show my projects and experience.",
         "website.png",
-        "dundeezhang.github.io",
+        "dundeezhangv4",
         "Github Repository",
         "",
         "https://dundeezhang.com",
@@ -94,7 +94,7 @@ const worksData: [
         "",
     ],
     [
-        "ReadMe",
+        "ReadMd",
         "JavaScript, Markdown, React",
         "View markdown files in a more readable format online.",
         "readmd.png",
