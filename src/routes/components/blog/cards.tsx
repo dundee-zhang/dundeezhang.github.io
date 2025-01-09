@@ -17,13 +17,13 @@ const blogData: [string, string, string, string][] = [
     [
         "CS 146 Tutorial 1 Notes",
         "January 8, 2025",
-        "Includes a breif overview of the language Haskell (the language used for the tutorials).",
+        "Includes a brief overview of the language Haskell (the language used for the tutorials).",
         "cs146-t1",
     ],
     [
         "CS 146 Lecture 1 Notes",
         "January 7, 2025",
-        "Includes a breif overview of the main concept in CS 146.",
+        "Includes a brief overview of the main concept in CS 146.",
         "cs146-l1",
     ],
     [

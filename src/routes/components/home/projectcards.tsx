@@ -51,7 +51,7 @@ const worksData: [string, string, string, string, string, string][] = [
         "TypeScript, React, Markdown",
         "My personal blog. Contains notes and articles I've written.",
         "blog.png",
-        "blog",
+        "dundeezhang.github.io",
         "Github Repository",
     ],
     [
