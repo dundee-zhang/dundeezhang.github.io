@@ -34,7 +34,7 @@ export default function About() {
                 className="card-container"
                 initial="offscreen"
                 whileInView="onscreen"
-                viewport={{ amount: 0.9}}
+                viewport={{ amount: 0.9 }}
                 variants={HeaderAnimate}
             >
                 <p className="about-me-ptext">
@@ -44,6 +44,16 @@ export default function About() {
                     experience developing using JavaScript, TypeScript, C, C++,
                     Java, and Python with frameworks and tools such as React,
                     Node, Next, and MongoDB.
+                </p>
+                <p className="about-me-ptext">
+                    I also maintain and update my blog when I have time. Check
+                    it out here{" "}
+                    <a href="/blog">
+                        <span className="about-me-paragraph link-hover">
+                            [link]
+                        </span>
+                    </a>
+                    .
                 </p>
                 <p className="about-me-ptext">
                     Currently, I am seeking internships for{" "}

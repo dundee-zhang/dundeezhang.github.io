@@ -1,4 +1,3 @@
-import pfp from "/src/img/specimenB.jpeg";
 import { motion } from "framer-motion";
 
 const resumeClick = () => {
@@ -9,7 +8,7 @@ export default function Intro() {
     return (
         <div id="intro">
             <header className="App-header">
-            <motion.div
+                <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -17,13 +16,11 @@ export default function Intro() {
                         delay: 0,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
-                >
-                    <div className="profile-picture">
-                        <img src={pfp} className="App-logo" alt="profile" />
-                    </div>
-                </motion.div>
+                ></motion.div>
                 <div className="dundee-container">
-                    <h1 className="dundee-name"><span>Hello! I'm Dundee.</span></h1>
+                    <h1 className="dundee-name">
+                        <span>Hello! I'm Dundee.</span>
+                    </h1>
                 </div>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -52,7 +49,8 @@ export default function Intro() {
                             href="https://uwaterloo.ca"
                         >
                             <span>University of Waterloo</span>
-                        </a>.
+                        </a>
+                        .
                     </p>
                 </motion.div>
 

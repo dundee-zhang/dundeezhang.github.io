@@ -17,6 +17,16 @@ span.about-me-paragraph {
     animation: animatedTextGradient 2.2s linear infinite;
 }
 
+span.link-hover:hover {
+    background: radial-gradient(circle at 100%, rgb(0, 0, 0), rgb(34, 34, 34));
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 2.2s linear infinite;
+}
+
 @keyframes animatedTextGradient {
     to {
         background-position: 200% center;
@@ -37,7 +47,21 @@ span.about-me-paragraph {
         -webkit-text-fill-color: transparent;
         animation: animatedTextGradient 2.2s linear infinite;
     }
-    
+
+    span.link-hover:hover {
+        background: radial-gradient(
+            circle at 100%,
+            rgb(255, 255, 255),
+            rgb(209, 209, 209)
+        );
+        font-weight: 600;
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animatedTextGradient 2.2s linear infinite;
+    }
+
     @keyframes animatedTextGradient {
         to {
             background-position: 200% center;

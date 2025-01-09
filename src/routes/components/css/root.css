@@ -70,6 +70,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         font-size: calc(10px + 2vmin);
         color: black;
         padding: 0;
@@ -141,15 +142,6 @@ span {
         font-weight: 600;
         font-style: normal;
         color: rgb(18, 100, 112);
-    }
-
-    .profile-picture {
-        width: 80vmin;
-        height: fit-content;
-        pointer-events: none;
-        margin: 20vh 7vmin 2.5vh;
-        padding: 0;
-        overflow: hidden;
     }
 
     .resume-button {
@@ -272,16 +264,6 @@ span {
         font-weight: 600;
         font-style: normal;
         color: rgb(18, 100, 112);
-    }
-
-    .profile-picture {
-        width: 70vmin;
-        height: fit-content;
-        pointer-events: none;
-        margin: 2.5vmin 0 1.5vmin;
-        padding: 0;
-        overflow: hidden;
-        display: none; /* remove profile picture on desktop*/
     }
 
     .resume-button {
