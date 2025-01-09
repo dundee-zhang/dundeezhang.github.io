@@ -94,6 +94,16 @@ const worksData: [
         "",
     ],
     [
+        "PicToPDF",
+        "JavaScript, React, CSS",
+        "Easily convert your pictures to a singular PDF file online.",
+        "pictopdf.png",
+        "pictopdf",
+        "Github Repository",
+        "",
+        "https://pictopdf.dhz.app/",
+    ],
+    [
         "ReadMd",
         "JavaScript, Markdown, React",
         "View markdown files in a more readable format online.",

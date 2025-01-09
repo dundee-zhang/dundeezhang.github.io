@@ -16,11 +16,11 @@ const blogClick = () => {
 };
 
 const projectsClick = () => {
-    window.open("/#projects", "_self");
+    window.open("/#projects", "_blank");
 };
 
 const contactClick = () => {
-    window.open("/#contactform", "_self");
+    window.open("/#contactform", "_blank");
 };
 
 export default function Blog() {

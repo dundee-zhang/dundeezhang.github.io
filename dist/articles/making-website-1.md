@@ -1,4 +1,6 @@
-July 4, 2024 - Making a Personal Website
+# Remaking Portfolio
+
+July 4, 2024
 
 I haven't finished a website in almost 2 years. I have never done much of react or even javascript in general in the past. So needless to say, I faced quite a few challenges when I decided to fully remake my website from the ground up.
 
