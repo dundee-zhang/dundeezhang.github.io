@@ -84,6 +84,13 @@ const MarkdownTest = () => {
                 </button>
                 <ReactMarkdown>{markdownContent}</ReactMarkdown>
                 <p className="end-of-article-marker">End of Article</p>
+                <button
+                    type="button"
+                    onClick={blogClick}
+                    className="back-button"
+                >
+                    Back
+                </button>
             </div>
             <div className="comment-section">
                 <Giscus

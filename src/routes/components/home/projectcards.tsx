@@ -47,6 +47,14 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
+        "dundeezhang.com/blog",
+        "TypeScript, React, Markdown",
+        "My personal blog. Contains notes and articles I've written.",
+        "blog.png",
+        "blog",
+        "Github Repository",
+    ],
+    [
         "datingdo.singles",
         "Bootstrap, HTML, CSS",
         "Grade 10 business final project written under time constraints.",
@@ -95,14 +103,6 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
-        "blog.dundeezhang.com",
-        "HTML, CSS",
-        "My personal blog. Now has been migrated to this website.",
-        "blog.png",
-        "blog",
-        "Github Repository",
-    ],
-    [
         "Submarine Intercept Sim",
         "Java, Java-Swing, OOP",
         "World War II Battleship (Haida) versus submarine simulator",
@@ -111,9 +111,9 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
-        "Coming Soon",
+        "More Projects",
         "More Languages",
-        "More projects are WIP. Check out and follow my GitHub.",
+        "More projects are on my GitHub profile where I keep more of my works. Check it out!",
         "future.jpg",
         "",
         "Github Profile",
