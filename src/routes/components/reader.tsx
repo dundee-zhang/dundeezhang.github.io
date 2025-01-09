@@ -14,11 +14,11 @@ const blogClick = () => {
 };
 
 const projectsClick = () => {
-    window.open("/#projects", "_blank");
+    window.open("/#projects", "_self");
 };
 
 const contactClick = () => {
-    window.open("/#contactform", "_blank");
+    window.open("/#contactform", "_self");
 };
 
 const MarkdownTest = () => {
