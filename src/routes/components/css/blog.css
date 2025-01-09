@@ -1,400 +1,168 @@
-.blog-container {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    align-items: normal;
-    text-align: left;
-    font-size: calc(10px + 1.5vmin);
-}
-
-@media only screen and (max-width: 600px) {
-    .blog-header {
-        display: flex;
-        padding: 10vmin;
-        background-color: rgb(166, 237, 252);
-        position: relative;
-    }
-
-    .blog-header-content {
-        margin: 0 auto;
-    }
-
-    .profile-picture-blog {
-        height: calc(10px + 20vmin);
-        float: left;
-        margin: 0 2vmin 0 0;
-        border-radius: 100%;
-    }
-
-    .title-div {
-        width: fit-content;
-        align-content: center;
-    }
-
-    h1.blog-title {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
-        font-style: normal;
-        margin-top: 3vmin;
-        font-size: calc(10px + 5vmin);
-    }
-
-    h2.blog-subtitle {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin-bottom: 1vmin;
-        font-size: calc(10px + 2vmin);
-        color: rgb(87, 87, 87);
-    }
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background: linear-gradient(
-            180deg,
-            rgb(255, 255, 255) 0%,
-            rgba(200, 200, 200, 0) 100%
-        );
-        z-index: 999;
-    }
-
-    .my-button {
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 2vmin 3vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
-        font-size: calc(8px + 2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: 3vh auto;
-    }
-
-    .my-button-blog {
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 2vmin 3vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
-        font-size: calc(8px + 2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: auto;
-    }
-
-    div.indicators-top {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        text-align: center;
-        margin: 3vmin 0 0.5vmin;
-    }
-
-    div.indicators-bottom {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        text-align: center;
-        margin: 0.5vmin 0 3vmin;
-    }
-
-    .blog-images {
-        object-fit: cover;
-        overflow: hidden;
-        height: 70vmin;
-        max-width: 100%;
-        border-radius: 3vmin;
-        filter: brightness(70%);
-    }
-
-    .blog-cards {
-        border-color: rgb(231, 231, 231);
-        border-radius: 2.5vmin;
-        background-color: #ffffff;
-        color: black;
-        margin: 2vmin 0;
-        min-width: 350px;
-        max-width: 500px;
-        text-align: left;
-        box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
-    }
-
-    .content-container {
-        margin: 0 auto;
-        width: fit-content;
-    }
-
-    .blog-title {
-        font-size: calc(8px + 4vmin);
-    }
-
-    .date-wrote {
-        font-size: calc(8px + 2vmin);
-        color: rgb(82, 82, 82);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    .about-blog-desc {
-        margin: 0 0 1.8vmin;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 400;
-        font-style: normal;
-        font-size: calc(8px + 1.8vmin);
-    }
-
-    .blog-buttons {
-        margin: 3vmin auto auto;
-        float: right;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .blog-header {
-        display: flex;
-        padding: 5vmin;
-        background-color: rgb(166, 237, 252);
-        position: relative;
-    }
-
-    .blog-header-content {
-        margin: 0 auto;
-    }
-
-    .profile-picture-blog {
-        height: calc(10px + 10vmin);
-        float: left;
-        margin: 0 2vmin 0 0;
-        border-radius: 100%;
-    }
-
-    .title-div {
-        width: fit-content;
-        align-content: center;
-    }
-
-    h1.blog-title {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin-top: 1vmin;
-        font-size: calc(10px + 2.5vmin);
-    }
-
-    h2.blog-subtitle {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 400;
-        font-style: normal;
-        margin-bottom: 1vmin;
-        font-size: calc(10px + 1.5vmin);
-    }
-
-    .navbar {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background: linear-gradient(
-            180deg,
-            rgb(255, 255, 255) 0%,
-            rgba(200, 200, 200, 0) 100%
-        );
-        z-index: 999;
-    }
-
-    .my-button {
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 1vmin 2.5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
-        font-size: calc(8px + 1.2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: 3vmin auto;
-    }
-
-    .my-button-blog {
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 1vmin 2.5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
-        font-size: calc(8px + 1.2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: auto;
-    }
-
-    .my-button:hover {
-        background-color: rgb(212, 250, 255);
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.08);
-    }
-
-    .my-buttong-blo:hover {
-        background-color: rgb(212, 250, 255);
-    }
-
-    div.indicators-top {
-        font-size: calc(8px + 1.2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        text-align: center;
-        margin: 3vmin 0 0.5vmin;
-    }
-
-    div.indicators-bottom {
-        font-size: calc(8px + 1.2vmin);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        text-align: center;
-        margin: 0.5vmin 0 3vmin;
-    }
-
-    .blog-images {
-        object-fit: cover;
-        overflow: hidden;
-        height: 35vmin;
-        min-width: 400px;
-        max-width: 100%;
-        border-radius: 2.5vmin;
-        filter: brightness(70%);
-    }
-
-    .blog-cards {
-        border-color: rgb(231, 231, 231);
-        border-radius: 3vmin;
-        background-color: #ffffff;
-        color: black;
-        margin: 2vmin 0;
-        min-width: 400px;
-        max-width: 500px;
-        text-align: left;
-        box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
-    }
-
-    .blog-cards:hover {
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.03);
-    }
-
-    a {
-        text-decoration: none;
-        color: rgb(89, 122, 168);
-    }
-
-    .content-container {
-        margin: 0 auto;
-        width: fit-content;
-    }
-
-    .blog-title {
-        font-size: calc(8px + 2vmin);
-    }
-
-    .date-wrote {
-        font-size: calc(8px + 1.1vmin);
-    }
-
-    .about-blog-desc {
-        margin: 0 0 1.5vmin;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 400;
-        font-style: normal;
-    }
-}
-
-p.highlight-color {
-    color: rgb(49, 97, 106);
+.blog-header {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    padding: 1rem;
     margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    .blog-container {
-        background-color: #252525;
-    }
+.title-div {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+}
 
+.blog-title {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+}
+
+.blog-subtitle {
+    color: rgb(200, 200, 200);
+    margin: 0;
+}
+
+.navbar {
+    margin: auto;
+    width: fit-content;
+}
+
+.end-of-articles {
+    background-color: rgb(24, 24, 24);
+    margin: auto;
+    max-width: 1000px;
+    padding: 1rem;
+    color: white;
+    padding-bottom: 3.5vmin;
+}
+
+div.blog-preview {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding: 3vmin;
+    margin: auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.open-article-button {
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    border: solid;
+    border-color: transparent;
+    margin: 1vmin 0.5vmin;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.open-article-button:hover {
+    border-color: white;
+}
+
+.blog-preview-title {
+    color: white;
+    font-size: calc(10px + 1vw);
+}
+
+.blog-preview-title:hover {
+    background: radial-gradient(
+        circle at 100%,
+        rgb(226, 137, 231),
+        rgb(224, 191, 225),
+        rgb(209, 79, 216),
+        rgb(233, 189, 235)
+    );
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 2.2s linear infinite;
+}
+
+.date-published-header {
+    color: rgb(200, 200, 200);
+    font-size: calc(10px + 0.5vw);
+}
+
+.blog-preview-desc {
+    color: rgb(255, 255, 255);
+    font-size: calc(10px + 0.5vw);
+    margin: 0;
+    font-weight: 500;
+}
+
+hr.card-divider {
+    margin: 1rem 0 0;
+}
+
+p.highlight-color {
+    color: rgb(95, 192, 209);
+    margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
     .blog-header {
-        background-color: rgb(8, 8, 8);
+        background-color: rgb(166, 237, 252);
+        color: black;
     }
 
-    .navbar {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background: linear-gradient(
-            180deg,
-            rgb(8, 8, 8) 0%,
-            rgba(200, 200, 200, 0) 100%
+    .blog-title {
+        color: black;
+    }
+
+    .blog-subtitle {
+        color: rgb(70, 70, 70);
+    }
+
+    div.blog-preview {
+        background-color: rgb(228, 247, 255);
+        color: black;
+    }
+
+    .open-article-button {
+        color: black;
+    }
+
+    .open-article-button:hover {
+        border-color: black;
+    }
+
+    .blog-preview-title {
+        color: black;
+        font-size: calc(10px + 1vw);
+    }
+
+    .blog-preview-title:hover {
+        background: radial-gradient(
+            circle at 100%,
+            rgb(18, 100, 112),
+            rgb(49, 167, 185),
+            rgb(11, 68, 76),
+            rgb(27, 150, 169)
         );
-        z-index: 999;
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animatedTextGradient 2.2s linear infinite;
     }
 
-    .my-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
+    .date-published-header {
+        color: rgb(70, 70, 70);
     }
 
-    .my-button-blog {
-        color: white;
-        background-color: rgb(60, 60, 60);
+    .blog-preview-desc {
+        color: rgb(0, 0, 0);
     }
 
-    .my-button:hover {
-        background-color: rgb(72, 72, 72);
+    .end-of-articles {
+        background-color: rgb(228, 247, 255);
+        color: black;
+        padding-bottom: 3.5vmin;
     }
 
-    .my-button-blog:hover {
-        background-color: rgb(72, 72, 72);
+    p.highlight-color {
+        color: rgb(49, 97, 106);
     }
-
-    .blog-images {
-        filter: brightness(50%);
-    }
-
-    .blog-cards {
-        border-color: rgba(231, 231, 231, 0);
-        border-radius: 3vmin;
-        background-color: #252525;
-        color: white;
-        box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
-    }
-
-    a {
-        text-decoration: none;
-        color: rgb(142, 175, 221);
-    }
-}
-
-/*  blog stuff */
-.green-colour {
-    color: rgb(64, 162, 64);
-}
-
-footer {
-    margin: 5vmin 0;
-}
-
-img {
-    max-width: 70%;
-}
-
-img.vert-img {
-    max-width: 50%;
-}
-
-p.desc {
-    font-size: calc(10px + 1vmin);
 }

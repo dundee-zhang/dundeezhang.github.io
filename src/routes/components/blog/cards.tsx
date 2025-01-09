@@ -1,109 +1,86 @@
-import { motion, Variants } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const viewPost = (article: number): undefined => {
-    window.open(`/blog/article/${article}`, "_self");
-};
-
-const CardDiv: Variants = {
-    offscreen: {
-        y: 10,
-        opacity: 0.1,
-        scale: 0.9,
-    },
-    onscreen: {
-        y: 0,
-        opacity: 1,
-        scale: 1,
-        transition: {
-            type: "spring",
-            bounce: 0.2,
-            duration: 1,
-        },
-    },
+const viewPost = (article: string): undefined => {
+    window.open(`/articles/${article}`, "_self");
 };
 
 interface Datas {
     title: string;
     date: string;
     desc: string;
-    postNum: number;
+    postName: string;
 }
 
-const blogData: [string, string, string, number][] = [
+const blogData: [string, string, string, string][] = [
     [
-        "[TEST] High School: A Retrospective",
-        "July 5, 2024",
-        "Now that high school is over, I have a few thoughts I thought I'd write about.",
-        2,
+        "CS 146 Tutorial 1 Notes",
+        "January 8, 2025",
+        "Includes a breif overview of the language Haskell (the language used for the tutorials).",
+        "cs146-t1",
     ],
     [
-        "[TEST] Making a Personal Website",
+        "CS 146 Lecture 1 Notes",
+        "January 7, 2025",
+        "Includes a breif overview of the main concept in CS 146.",
+        "cs146-l1",
+    ],
+    [
+        "Making a Personal Website",
         "July 4, 2024",
         "For the first time in 3 years, I made a personal website to display my projects and ideas.",
-        1,
+        "making-website-1",
     ],
     [
-        "[TEST] A Year of Online School",
+        "A Year of Online School",
         "October 15, 2021",
         "After a year of doing virtual high school, here are my thoughts...",
-        0,
+        "online-highschool",
     ],
 ];
 
-function BlogCard({ title, date, desc, postNum }: Datas) {
+function BlogCard({ title, date, desc, postName }: Datas) {
     return (
-        <Row>
-            <Col>
-                <motion.div
-                    className="card-container"
-                    initial="offscreen"
-                    whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
-                    variants={CardDiv}
-                >
-                    <Card className="blog-cards">
-                        <Card.Img
-                            src={`/works/future.jpg`}
-                            className="blog-images"
-                        />
-                        <Card.Body>
-                            <Card.Title className="blog-title">
-                                {title}
-                            </Card.Title>
-
-                            <Card.Subtitle className="mb-2 date-wrote">
-                                {date}
-                            </Card.Subtitle>
-                            <Card.Text className="about-blog-desc">
-                                {desc}
-                            </Card.Text>
-                            <button
-                                type="button"
-                                onClick={() => viewPost(postNum)}
-                                className="my-button-blog blog-buttons"
-                            >
-                                View Post
-                            </button>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-            </Col>
-        </Row>
+        <div className="blog-card">
+            <Row>
+                <Col>
+                    <div className="blog-preview">
+                        <h1
+                            onClick={() => viewPost(postName)}
+                            className="blog-preview-title"
+                        >
+                            {title}
+                        </h1>
+                        <h2 className="date-published-header">
+                            Published on {date}
+                        </h2>
+                        <p className="blog-preview-desc">{desc}</p>
+                        <hr className="card-divider" />
+                    </div>
+                </Col>
+            </Row>
+        </div>
     );
 }
 
-export default function BlogCards() {
-    return blogData.map(([title, date, desc, postNum]) => (
+function BlogCardsMap() {
+    return blogData.map(([title, date, desc, postName]) => (
         <BlogCard
             title={title}
             date={date}
             desc={desc}
-            postNum={postNum}
+            postName={postName}
             key={null}
         />
     ));
+}
+
+export default function BlogCards() {
+    return (
+        <div>
+            <BlogCardsMap />
+            <p className="end-of-articles">End of Articles :)</p>
+        </div>
+    );
 }
