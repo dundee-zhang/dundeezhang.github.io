@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "26bb9c4a2ef6c513",
+        "id": "e26c149accda0860",
         "type": "tabs",
         "children": [
           {
-            "id": "4529e1195390450c",
+            "id": "d21888d6b85a9d07",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -158,7 +158,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4529e1195390450c",
+  "active": "d21888d6b85a9d07",
   "lastOpenFiles": [
     "website-updates.md",
     "making-website-1.md",
