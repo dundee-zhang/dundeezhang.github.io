@@ -1,9 +1,10 @@
 export default function Footer() {
+    const currYear = new Date().getFullYear();
     return (
         <div>
             <footer className="app-footer">
                 <span className="glow">
-                    <p>Dundee Zhang 2025 - All Rights Reserved</p>
+                    <p>Dundee Zhang {currYear} - All Rights Reserved</p>
                 </span>
                 <ul className="social-cons">
                     <li>
