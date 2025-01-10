@@ -103,7 +103,7 @@ const MarkdownTest = () => {
                 </button>
                 <ReactMarkdown
                     components={{
-                        code({ className, children, ...rest }) {
+                        code({ className, children, ...props }) {
                             const match = /language-(\w+)/.exec(
                                 className || ""
                             );
@@ -112,17 +112,18 @@ const MarkdownTest = () => {
                                 <SyntaxHighlighter
                                     PreTag="div"
                                     language={match[1]}
+                                    // @ts-expect-error style tag overload
                                     style={
                                         isDarkMode
                                             ? materialDark
                                             : materialLight
                                     }
-                                    {...rest}
+                                    {...props}
                                 >
                                     {codeString}
                                 </SyntaxHighlighter>
                             ) : (
-                                <code {...rest} className={className}>
+                                <code {...props} className={className}>
                                     {codeString}
                                 </code>
                             );

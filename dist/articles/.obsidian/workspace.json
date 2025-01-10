@@ -11,10 +11,14 @@
             "id": "d21888d6b85a9d07",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "cs146-l2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "cs146-l2"
             }
           }
         ]
@@ -160,6 +164,8 @@
   },
   "active": "d21888d6b85a9d07",
   "lastOpenFiles": [
+    "cs146-l1.md",
+    "cs146-l2.md",
     "website-updates.md",
     "making-website-1.md",
     "assets/website-updates/dundeezhangv4r2blog.png",
@@ -173,7 +179,6 @@
     "assets/website-updates/dundeezhangv4r1.png",
     "cs146-t1.md",
     "assets/website-updates/dundeezhangv2home.png",
-    "cs146-l1.md",
     "assets/dundeezhangv1home.md",
     "assets/website-updates/dundeezhangv1home.png",
     "assets/website-updates"
