@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <Blog />,
     },
     {
-        path: "/articles/:filename",
+        path: "articles/:filename",
         element: <Reader />,
     },
 ]);

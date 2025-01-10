@@ -15,7 +15,7 @@
     position: relative;
 }
 
-span {
+span.glow {
     background: radial-gradient(
         circle at 100%,
         rgb(18, 100, 112),
@@ -366,7 +366,7 @@ span {
         }
     }
 
-    span {
+    span.glow {
         background: radial-gradient(
             circle at 100%,
             rgb(226, 137, 231),

@@ -18,7 +18,7 @@ const blogData: [string, string, string, string][] = [
         "CS 146 Lecture 2 Notes",
         "January 9, 2025",
         "Side-effects and modelling output in Racket",
-        "cs146-l2",
+        "cs146-lecture2",
     ],
     [
         "Website Updates",
@@ -30,13 +30,13 @@ const blogData: [string, string, string, string][] = [
         "CS 146 Tutorial 1 Notes",
         "January 8, 2025",
         "Includes a brief overview of the language Haskell (the language used for the tutorials).",
-        "cs146-t1",
+        "cs146-tutorial1",
     ],
     [
         "CS 146 Lecture 1 Notes",
         "January 7, 2025",
         "Includes a brief overview of the main concept in CS 146.",
-        "cs146-l1",
+        "cs146-lecture1",
     ],
     [
         "Making a Personal Website",

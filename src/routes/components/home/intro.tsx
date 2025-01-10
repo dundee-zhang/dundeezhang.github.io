@@ -19,7 +19,7 @@ export default function Intro() {
                 ></motion.div>
                 <div className="dundee-container">
                     <h1 className="dundee-name">
-                        <span>Hello! I'm Dundee.</span>
+                        <span className="glow">Hello! I'm Dundee.</span>
                     </h1>
                 </div>
                 <motion.div
@@ -39,7 +39,7 @@ export default function Intro() {
                             className="csText"
                             href="https://uwaterloo.ca/future-students/programs/computer-science"
                         >
-                            <span>CS</span>
+                            <span className="glow">CS</span>
                         </a>{" "}
                         @{" "}
                         <a
@@ -48,7 +48,7 @@ export default function Intro() {
                             className="schoolText"
                             href="https://uwaterloo.ca"
                         >
-                            <span>University of Waterloo</span>
+                            <span className="glow">University of Waterloo</span>
                         </a>
                         .
                     </p>
