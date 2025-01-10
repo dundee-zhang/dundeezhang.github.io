@@ -63,6 +63,7 @@ div.blog-preview {
 .blog-preview-title {
     color: white;
     font-size: calc(10px + 1vw);
+    width: fit-content;
 }
 
 .blog-preview-title:hover {

@@ -19,6 +19,18 @@
     font-size: calc(10px + 0.5vw);
 }
 
+.article-content a {
+    color: rgb(226, 137, 231);
+}
+
+.article-content a:visited {
+    color: rgb(226, 137, 231);
+}
+
+.article-content a:hover {
+    color: rgb(255, 255, 255);
+}
+
 .article-content img {
     max-width: 600px;
     width: 80vw;
@@ -146,5 +158,17 @@ p.end-of-article-marker {
         border: solid;
         border-color: rgb(18, 100, 112);
         color: rgb(18, 100, 112);
+    }
+
+    .article-content a {
+        color: rgb(18, 100, 112);
+    }
+
+    .article-content a:visited {
+        color: rgb(18, 100, 112);
+    }
+
+    .article-content a:hover {
+        color: rgb(0, 0, 0);
     }
 }
