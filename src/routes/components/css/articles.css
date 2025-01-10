@@ -81,6 +81,10 @@
     display: list-item;
 }
 
+.article-content code {
+    color: rgb(216, 216, 216);
+}
+
 p.end-of-article-marker {
     margin: 4vmin 0 3vmin;
     background: radial-gradient(
@@ -142,6 +146,10 @@ p.end-of-article-marker {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: animatedTextGradient 2.2s linear infinite;
+    }
+
+    .article-content code {
+        color: rgb(48, 48, 48);
     }
 
     .back-button {
