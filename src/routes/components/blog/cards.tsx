@@ -15,6 +15,12 @@ interface Datas {
 
 const blogData: [string, string, string, string][] = [
     [
+        "CS 146 Lecture 2 Notes",
+        "January 9, 2025",
+        "Side-effects and modelling output in Racket",
+        "cs146-l2",
+    ],
+    [
         "Website Updates",
         "January 9, 2025",
         "Looking back at the changes I made to my website in the past years.",
