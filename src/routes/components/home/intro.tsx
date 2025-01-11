@@ -8,15 +8,6 @@ export default function Intro() {
     return (
         <div id="intro">
             <header className="App-header">
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.4,
-                        delay: 0,
-                        ease: [0, 0.71, 0.2, 1.01],
-                    }}
-                ></motion.div>
                 <div className="dundee-container">
                     <h1 className="dundee-name">
                         <span className="glow">Hello! I'm Dundee.</span>

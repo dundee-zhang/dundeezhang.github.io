@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+import uwcsWrBlack from "/icons/blackuwcswebring.svg";
+import uwcsWrWhite from "/icons/uwcscwebring.svg";
 
 export default function TableOfContents() {
     const resumeClick = () => {
         window.open("/resume.pdf", "_blank");
     };
+
+    const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });
 
     return (
         <div className="table-of-content-wrapper">
@@ -25,7 +30,32 @@ export default function TableOfContents() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <ul className="table-of-content">Go To:</ul>
+                    <ul className="table-of-content">
+                        <div className="webring-div">
+                            <a
+                                className="cs-webring-links"
+                                href="https://cs.uwatering.com/#https://dundeezhang.com?nav=prev"
+                            >
+                                ↼
+                            </a>
+                            <a
+                                href="https://cs.uwatering.com/#https://dundeezhang.com"
+                                target="_blank"
+                            >
+                                <img
+                                    src={isDarkMode ? uwcsWrWhite : uwcsWrBlack}
+                                    alt="UWaterloo CS Web Ring"
+                                    className="cs-webring"
+                                />
+                            </a>
+                            <a
+                                className="cs-webring-links"
+                                href="https://cs.uwatering.com/#https://dundeezhang.com?nav=next"
+                            >
+                                ⇀
+                            </a>
+                        </div>
+                    </ul>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, scale: 1.5 }}
