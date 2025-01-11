@@ -114,16 +114,6 @@ const worksData: [
         "https://readmd.dhz.app/",
     ],
     [
-        "datingdo.singles",
-        "Bootstrap, HTML, CSS",
-        "Grade 10 business final project written under time constraints.",
-        "datingdo.png",
-        "datingdo.single",
-        "Github Repository",
-        "",
-        "https://dundeezhang.github.io/datingdo.single/",
-    ],
-    [
         "dzPass",
         "C++, Makefile, OOP",
         "An CLI password and user manager tool written in C++ only.",
@@ -132,26 +122,6 @@ const worksData: [
         "Github Repository",
         "hide-button-class",
         "",
-    ],
-    [
-        "Better-Calculator",
-        "C++, C, Cmake, Makefile",
-        "A CLI calculator tool I made to help me do homework.",
-        "bettercalc.png",
-        "Better-Calculator",
-        "Github Repository",
-        "hide-button-class",
-        "",
-    ],
-    [
-        "dundeezhangv1",
-        "HTML, CSS",
-        "My first version of this website. Made only with html/css.",
-        "dundeezhangv1.png",
-        "dundeezhangv1",
-        "Github Repository",
-        "",
-        "https://dundeezhang.github.io/dundeezhangv1/",
     ],
     [
         "Submarine Intercept Sim",
@@ -166,7 +136,7 @@ const worksData: [
     [
         "More Projects",
         "More Languages",
-        "More projects are on my GitHub profile where I keep more of my works. Check it out!",
+        "Most of my projects are found on my GitHub profile.",
         "future.jpg",
         "",
         "Github Profile",
@@ -195,21 +165,27 @@ function WorksCard({
                 variants={CardDiv}
             >
                 <Card className="project-cards">
-                    <Card.Img
-                        variant="top"
-                        src={`/works/${pic}`}
-                        className="project-images"
-                    />
+                    <a onClick={() => viewProject(repository)}>
+                        <Card.Img
+                            variant="top"
+                            src={`/works/${pic}`}
+                            className="project-images"
+                        />
+                    </a>
+
                     <Card.Body className="ibm-plex-mono-light">
-                        <Card.Title className="project-title">
-                            {title}
-                        </Card.Title>
-                        <Card.Subtitle className="mb-2 tools-used">
-                            {langs}
-                        </Card.Subtitle>
-                        <Card.Text className="about-project-desc">
-                            {desc}
-                        </Card.Text>
+                        <a onClick={() => viewProject(repository)}>
+                            <Card.Title className="project-title">
+                                {title}
+                            </Card.Title>
+                            <Card.Subtitle className="mb-2 tools-used">
+                                {langs}
+                            </Card.Subtitle>
+                            <Card.Text className="about-project-desc">
+                                {desc}
+                            </Card.Text>
+                        </a>
+
                         <button
                             type="button"
                             onClick={() => viewProject(repository)}
