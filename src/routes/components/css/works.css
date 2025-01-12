@@ -30,7 +30,8 @@
 
     .header-name {
         font-size: calc(10px + 4vmin);
-        margin: 12vmin 0 3vmin;
+        margin: 0 0 3vmin;
+        padding-top: 12vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 600;
         font-style: normal;
@@ -48,7 +49,8 @@
     .project-cards {
         border-color: rgb(231, 231, 231);
         border-radius: 2.5vmin;
-        background-color: #ffffff;
+        background-color: #ffffff00;
+        backdrop-filter: blur(4px);
         color: black;
         margin: 2vmin 0;
         min-width: 350px;
@@ -148,7 +150,8 @@
     .project-cards {
         border-color: rgb(231, 231, 231);
         border-radius: 2.5vmin;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(4px);
         color: black;
         margin: 2vmin 0;
         min-width: 400px;
@@ -243,7 +246,8 @@
     }
 
     .project-cards {
-        background-color: #252525;
+        background-color: #25252500;
+        backdrop-filter: blur(4px);
         color: white;
         box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
         border-color: #252525;

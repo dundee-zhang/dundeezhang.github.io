@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Footer from "./components/footer";
 import BlogCards from "./components/blog/cards";
 
-import MainBackground from "./components/home/background";
+import MainBackground from "./components/background";
 
 const homeClick = () => {
     window.open("/", "_self");

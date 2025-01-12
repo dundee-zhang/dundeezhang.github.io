@@ -9,7 +9,7 @@ import {
     materialLight,
 } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-import MainBackground from "./home/background";
+import MainBackground from "./background";
 import Footer from "./footer";
 
 const homeClick = () => {

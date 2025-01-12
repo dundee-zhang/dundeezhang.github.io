@@ -25,7 +25,7 @@ export default function Contact() {
     if (state.succeeded) {
         return (
             <div>
-                <h2>Contact Me</h2>
+                <h2 className="header-name">Contact Me</h2>
                 <p className="message-return">Message Sent!</p>
             </div>
         );
@@ -34,7 +34,7 @@ export default function Contact() {
     if (state.errors) {
         return (
             <div>
-                <h2>Contact Me</h2>
+                <h2 className="header-name">Contact Me</h2>
                 <p className="message-return">Message Failed to Send</p>
             </div>
         );
@@ -43,7 +43,7 @@ export default function Contact() {
     if (state.submitting) {
         return (
             <div>
-                <h2>Contact Me</h2>
+                <h2 className="header-name">Contact Me</h2>
                 <p className="message-return">Sending...</p>
             </div>
         );
@@ -59,7 +59,7 @@ export default function Contact() {
                     viewport={{ amount: 0.9 }}
                     variants={HeaderAnimate}
                 >
-                    <h2>Contact Me</h2>
+                    <h2 className="header-name">Contact Me</h2>
                 </motion.div>
 
                 <form

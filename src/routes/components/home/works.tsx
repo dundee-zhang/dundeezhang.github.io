@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import WorkCards from "./projectcards";
+import MoreCards from "./moreprojects";
 
 const HeaderAnimate = {
     offscreen: {
@@ -26,11 +27,23 @@ const HeaderAnimate = {
 
 function Works() {
     const [open, setOpen] = useState(true);
-    const [buttonText, setButtonText] = useState('Hide');
+    const [openMore, setOpenMore] = useState(false);
+    const [buttonText, setButtonText] = useState("Hide");
+    const [buttonMoreText, setButtonMoreText] = useState("Show More Projects");
     const toggle = () => {
-        setButtonText(buttonText === 'Hide' ? 'Show' : 'Hide');
+        setButtonText(buttonText === "Hide" ? "Show" : "Hide");
         setOpen(!open);
     };
+
+    const toggleMore = () => {
+        setButtonMoreText(
+            buttonMoreText === "Show More Projects"
+                ? "Show Less Projects"
+                : "Show More Projects"
+        );
+        setOpenMore(!openMore);
+    };
+
     return (
         <div className="Body" id="projects">
             <body className="App-content">
@@ -45,20 +58,38 @@ function Works() {
                         My Projects:
                     </h2>
                     <button
+                        type="button"
+                        onClick={toggle}
+                        className="hide-button"
+                        id="toggle-button"
+                    >
+                        {buttonText}
+                    </button>
+                </motion.div>
+                {open && (
+                    <div>
+                        <Container fluid>
+                            <Row className="card-container-works">
+                                <WorkCards />
+                            </Row>
+                        </Container>
+
+                        {openMore && (
+                            <Container fluid>
+                                <Row className="card-container-works">
+                                    <MoreCards />
+                                </Row>
+                            </Container>
+                        )}
+                        <button
                             type="button"
-                            onClick={toggle}
+                            onClick={toggleMore}
                             className="hide-button"
                             id="toggle-button"
                         >
-                            {buttonText}
+                            {buttonMoreText}
                         </button>
-                </motion.div>
-                {open && (
-                    <Container fluid>
-                        <Row className="card-container-works">
-                            <WorkCards />
-                        </Row>
-                    </Container>
+                    </div>
                 )}
             </body>
         </div>

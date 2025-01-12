@@ -36,60 +36,73 @@ interface Datas {
     title: string;
     langs: string;
     desc: string;
-    pic: string;
     repository: string;
     buttontext: string;
     hideclass: string;
     externallink: string;
 }
 
-const worksData: [
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string
-][] = [
+const moreData: [string, string, string, string, string, string, string][] = [
     [
-        "dundeezhang.com",
+        "Contest Solutions",
+        "C++, Java, Python",
+        "Repository to store most of my solutions for CS problems.",
+        "Contests",
+        "Github Repository",
+        "hide-button-class",
+        "",
+    ],
+    [
+        "PicToPDF",
+        "JavaScript, React, CSS",
+        "Easily convert your pictures to a singular PDF file online.",
+        "pictopdf",
+        "Github Repository",
+        "",
+        "https://pictopdf.dhz.app/",
+    ],
+    [
+        "ReadMd",
+        "JavaScript, Markdown, React",
+        "View markdown files in a more readable format online.",
+        "readmd",
+        "Github Repository",
+        "",
+        "https://readmd.dhz.app/",
+    ],
+    [
+        "NHSCSC Website",
         "TypeScript, React, CSS",
-        "An introduction website to show my projects and experience.",
-        "website.png",
-        "dundeezhangv4",
+        "Website for NHS CS Club. Shows events and announcements.",
+        "website-nhscc",
         "Github Repository",
         "",
-        "https://dundeezhang.com",
+        "https://nhscc.vercel.app/",
     ],
     [
-        "dundeezhang.com/blog",
-        "TypeScript, React, Markdown",
-        "My personal blog. Contains notes and articles I've written.",
-        "blog.png",
-        "dundeezhang.github.io",
+        "dzPass",
+        "C++, Makefile, OOP",
+        "An CLI password and user manager tool written in C++ only.",
+        "dzPass",
         "Github Repository",
+        "hide-button-class",
         "",
-        "https://dundeezhang.com/blog",
     ],
     [
-        "More Projects",
-        "More Languages",
-        "Most of my projects are found on my GitHub profile or dhz.app.",
-        "future.jpg",
+        "Submarine Intercept Sim",
+        "Java, Java-Swing, OOP",
+        "World War II Battleship (Haida) versus submarine simulator",
+        "Submarine-Intercept-Simulator",
+        "Github Repository",
+        "hide-button-class",
         "",
-        "Github Profile",
-        "",
-        "https://dhz.app",
     ],
 ];
 
-function WorksCard({
+function MoreCard({
     title,
     langs,
     desc,
-    pic,
     repository,
     buttontext,
     hideclass,
@@ -105,14 +118,6 @@ function WorksCard({
                 variants={CardDiv}
             >
                 <Card className="project-cards">
-                    <a onClick={() => viewProject(repository)}>
-                        <Card.Img
-                            variant="top"
-                            src={`/works/${pic}`}
-                            className="project-images"
-                        />
-                    </a>
-
                     <Card.Body className="ibm-plex-mono-light">
                         <a onClick={() => viewProject(repository)}>
                             <Card.Title className="project-title">
@@ -149,23 +154,21 @@ function WorksCard({
     );
 }
 
-export default function WorkCards() {
-    return worksData.map(
+export default function MoreCards() {
+    return moreData.map(
         ([
             title,
             langs,
             desc,
-            pic,
             repository,
             buttontext,
             hideclass,
             externallink,
         ]) => (
-            <WorksCard
+            <MoreCard
                 title={title}
                 langs={langs}
                 desc={desc}
-                pic={pic}
                 repository={repository}
                 buttontext={buttontext}
                 hideclass={hideclass}

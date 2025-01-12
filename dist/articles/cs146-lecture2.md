@@ -7,10 +7,10 @@ In preparation for side-effects.
 ```
 
 -   Evaluates all of `exp1, ... exp_n` in left-to-right order
-    -   In scheme, it's unordered evaluation, so begin was needed.
+    -   In scheme, it's unordered evaluation, so `begin` was needed.
     -   However, Racket evaluates in order from left-to-right without begin.
 -   The `begin` function produces the value of `exp_n`. Thus, it is useless in a pure functional setting as you would only care about the output.
--   `begin` is useful if `exp_1 ... exp_n-1 `are evaluated for their side-effects.
+-   `begin` is useful if `exp_1 ... exp_n-1` are evaluated for their side-effects.
     -   Recall side-effects include input, displaying, or anything that is not computing the output.
 -   Implicit `begin` in the bodies of `fns`, `lambdas`, `local`, `answers` of `cond`/`match` in Racket.
     -   These functions will execute from left-to-right order without the usage of `begin`.
@@ -215,7 +215,7 @@ How to define `for-each`:
 	  (begin (f (first lst)) (for-each f (rest lst)))))
 ```
 
-Doing nothing in one case of an if is common and has a specialized form :
+Doing nothing in one case of an if is common and has a specialized form:
 
 ```scheme
 (define (for-each f lst)

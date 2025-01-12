@@ -10,7 +10,7 @@ In preparation for side-effects.
     -   In scheme, it's unordered evaluation, so `begin` was needed.
     -   However, Racket evaluates in order from left-to-right without begin.
 -   The `begin` function produces the value of `exp_n`. Thus, it is useless in a pure functional setting as you would only care about the output.
--   `begin` is useful if `exp_1 ... exp_n-1 `are evaluated for their side-effects.
+-   `begin` is useful if `exp_1 ... exp_n-1` are evaluated for their side-effects.
     -   Recall side-effects include input, displaying, or anything that is not computing the output.
 -   Implicit `begin` in the bodies of `fns`, `lambdas`, `local`, `answers` of `cond`/`match` in Racket.
     -   These functions will execute from left-to-right order without the usage of `begin`.
