@@ -10,7 +10,9 @@ export default function Footer() {
         <div>
             <footer className="app-footer">
                 <span className="glow">
-                    <p>Dundee Zhang {currYear} - All Rights Reserved</p>
+                    <p className="p-foot">
+                        Dundee Zhang {currYear} - All Rights Reserved
+                    </p>
                 </span>
                 <ul className="social-cons">
                     <li>
