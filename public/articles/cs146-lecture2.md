@@ -1,3 +1,7 @@
+# CS 146 Lecture 2 Notes
+
+January 9, 2025
+
 In preparation for side-effects.
 
 ## Introducing `begin`
