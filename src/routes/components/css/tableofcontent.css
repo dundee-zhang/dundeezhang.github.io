@@ -8,10 +8,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .webring-div {
-        display: none;
-    }
-
     .navlist {
         display: none;
     }
@@ -40,27 +36,8 @@
         font-size: calc(10px + 1.5vmin);
     }
 
-    .webring-div-mobile {
-        margin: 0 0 5vh;
-    }
-
     a {
         text-decoration: none;
-    }
-
-    .cs-webring-mobile {
-        width: 3vh;
-    }
-
-    .cs-webring-links-mobile {
-        font-size: calc(10px + 3vh);
-        height: fit-content;
-        color: black;
-        margin: 0 4px;
-    }
-
-    .cs-webring-links-mobile:visited {
-        color: black;
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -109,23 +86,6 @@
         background-clip: text;
     }
 
-    .webring-div {
-        margin-bottom: 5vh;
-    }
-
-    .webring-div-mobile {
-        display: none;
-    }
-
-    .cs-webring {
-        width: 2.5vmin;
-        margin: 0 5px;
-    }
-
-    .cs-webring-links {
-        margin: 0 10px;
-    }
-
     @keyframes animatedTextGradient {
         to {
             background-position: 200% center;
@@ -134,16 +94,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    .cs-webring-links-mobile {
-        font-size: calc(10px + 3vh);
-        height: fit-content;
-        color: white;
-    }
-
-    .cs-webring-links-mobile:visited {
-        color: white;
-    }
-
     .mobile-nav {
         background-color: rgb(8, 8, 8);
     }

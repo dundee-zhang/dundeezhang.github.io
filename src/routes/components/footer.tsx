@@ -72,30 +72,7 @@ export default function Footer() {
                         </a>
                     </li>
                 </ul>
-                <div className="webring-div-mobile">
-                    <a
-                        className="cs-webring-links-mobile"
-                        href="https://cs.uwatering.com/#https://dundeezhang.com?nav=prev"
-                    >
-                        ↼
-                    </a>
-                    <a
-                        href="https://cs.uwatering.com/#https://dundeezhang.com"
-                        target="_blank"
-                    >
-                        <img
-                            src={isDarkMode ? uwcsWrWhite : uwcsWrBlack}
-                            alt="UWaterloo CS Web Ring"
-                            className="cs-webring-mobile"
-                        />
-                    </a>
-                    <a
-                        className="cs-webring-links-mobile"
-                        href="https://cs.uwatering.com/#https://dundeezhang.com?nav=next"
-                    >
-                        ⇀
-                    </a>
-                </div>
+
                 <div className="webring-div">
                     <a
                         className="cs-webring-links"
