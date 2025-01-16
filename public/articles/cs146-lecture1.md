@@ -32,7 +32,7 @@ Thus, a temporal component inherent in the analysis of imperative programs (not 
 
 -   Even functional programs are eventually executed imperatively
 
--Is "the world" constantly changing or is it constantly being reinvented?
+-   Is "the world" constantly changing or is it constantly being reinvented?
 
 -   When a character appears on the screen, does that change the world or create a new one?
 -   Either way, Imperative programming matches up with the real world experience.
