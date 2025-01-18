@@ -15,6 +15,12 @@ interface Datas {
 
 const blogData: [string, string, string, string][] = [
     [
+        "CS 146 Lecture 4 Notes",
+        "January 16, 2025",
+        "Modelling the C language from a Racket perspective.",
+        "cs146-lecture4",
+    ],
+    [
         "CS 146 Lecture 3 Notes",
         "January 14, 2025",
         "Modelling input and more side-effects in Racket.",
