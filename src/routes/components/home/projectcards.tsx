@@ -68,7 +68,7 @@ const worksData: [
         "TypeScript, React, Markdown",
         "My personal blog. Contains notes and articles I've written.",
         "blog.png",
-        "dundeezhang.github.io",
+        "dundeezhangv4",
         "Github Repository",
         "",
         "https://dundeezhang.com/blog",
