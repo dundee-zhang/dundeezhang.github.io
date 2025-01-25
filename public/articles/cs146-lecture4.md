@@ -2,9 +2,9 @@
 
 January 16, 2025
 
-### Continuation from [Lecture 3](./cs146-lecture3.md)
+### Continuation from [Lecture 3](./cs146-lecture3)
 
-Recall the code from the end of [Lecture 3](./cs146-lecture3.md).
+Recall the code from the end of [Lecture 3](./cs146-lecture3).
 
 ```scheme
 ;; Helper:
