@@ -1,4 +1,9 @@
+# CS 146 Lecture 5 Notes
+
+January 21, 2025
+
 I missed my usual section of this lecture, so there may be some discontinuities between sections.
+
 ## Continued from [Lecture 4](./cs146-lecture4)
 Now, lets talk about merging/combining binary files (different compiled C files). Recall the `printf` function from last lecture. When the `printf` code, or more specifically the `stdio.h` file was compiled, it was stored and put into another "standard place" like `/usr/lib`. Now that binary must be combined with our own code. This process is called **linking**. The linking step is processed by a tool called the linker. The linker will run automatically and it "knows" to link the code for printf. If you write your own modules, you will have to tell the linker about them.
 
