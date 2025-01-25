@@ -2,16 +2,16 @@
 
 January 16, 2025
 
-### Continuation from [Lecture 3](./cs146-lecture3)
+### Continuation from [Lecture 3](./cs146-lecture3.md)
 
-Recall the code from the end of [Lecture 3](./cs146-lecture3).
+Recall the code from the end of [Lecture 3](./cs146-lecture3.md).
 
 ```scheme
 ;; Helper:
 ;; read-list: -> (listof S-expr)
 (define (read-list) ;; assumes left-par has already been read
   (define tk (read-token))
-  (cond [(token-rightpar? tk) empty];; need to define token-rightpar
+  cond [(token-rightpar? tk) empty];; need to define token-rightpar
        [(token-left-par? tk) (cons (read-list) (read-list))]
        [else (cons (token-value tk) (read-list))]))
 
