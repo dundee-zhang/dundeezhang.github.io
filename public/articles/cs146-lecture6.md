@@ -2,7 +2,7 @@
 
 January 23, 2025
 
-There may be a small disconnect from last [last lecture's notes](./cs146-lecture5) since I am back to my original section now.
+There may be a small disconnect from [last lecture's notes](./cs146-lecture5) since I am back to my original section now.
 
 ### The `getInt()` function
 
