@@ -1,5 +1,5 @@
 I missed my usual section of this lecture, so there may be some discontinuities between sections.
-## Continued from [[Lecture 4]]
+## Continued from [Lecture 4](./cs146-lecture4)
 Now, lets talk about merging/combining binary files (different compiled C files). Recall the `printf` function from last lecture. When the `printf` code, or more specifically the `stdio.h` file was compiled, it was stored and put into another "standard place" like `/usr/lib`. Now that binary must be combined with our own code. This process is called **linking**. The linking step is processed by a tool called the linker. The linker will run automatically and it "knows" to link the code for printf. If you write your own modules, you will have to tell the linker about them.
 
 ## The C Language
@@ -103,4 +103,4 @@ if(test1) {
 It is an even further restricted form of integer. Typically an int is 32 bits 2^32 integers (~4x10^9 distinct values). A char is 8 bits, or 256 distinct values. Note that the '0' (character zero) is numerically 48. Thus when `char c = '0';` is written in C, it is equivalent to `char c = 48;`. This leads to the next point where everything in memory is numbers. So each character must have a numeric code that corresponds to it. Thus, there is an old code called `ASCII`. This is a 7 bit code for transcribing integers from 0 to 127. Another code for information interchange from the time is `EBCDIC` - Encoded Binary Coded Decimal Interchange Code, and it is much less used than `ASCII` now. However, `Unicode` for the most part has taken over `ASCII` as it is also backwards compatible with `ASCII` code.
 
 ### A Second Look at `getchar()`
-The prototype for `getchar` is really `int getchar();` Why is it returning an `int` if it is supposed to produce a `char`? Well, what if there is no character, but rather an `End-of-File` object. 1
+The prototype for `getchar` is really `int getchar();` Why is it returning an `int` if it is supposed to produce a `char`? Well, what if there is no character, but rather an `End-of-File` object.
