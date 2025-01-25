@@ -15,6 +15,18 @@ interface Datas {
 
 const blogData: [string, string, string, string][] = [
     [
+        "CS 146 Lecture 6 Notes",
+        "January 23, 2025",
+        "Mutation and memoization in a non-pure functional program.",
+        "cs146-lecture6",
+    ],
+    [
+        "CS 146 Lecture 5 Notes",
+        "January 21, 2025",
+        "The C Compiler and primitive C character input.",
+        "cs146-lecture5",
+    ],
+    [
         "CS 146 Lecture 4 Notes",
         "January 16, 2025",
         "Modelling the C language from a Racket perspective.",
@@ -59,7 +71,7 @@ const blogData: [string, string, string, string][] = [
     [
         "A Year of Online School",
         "October 15, 2021",
-        "After a year of doing virtual high school, here are my thoughts...",
+        "After a year of doing virtual high school, here are my thoughts.",
         "online-highschool",
     ],
 ];
