@@ -18,13 +18,13 @@ Note that this function is different that last classes, as c is a `peekchar()` s
 ```c
 int getIntHelper(int acc) {
 	int c = getchar();
-	return isdigit(c) ? 
-	getIntHelper (10 * acc + c - '0') : 
+	return isdigit(c) ?
+	getIntHelper (10 * acc + c - '0') :
 	(ungetc(c, stdin), acc); // the comma evaluator
 }
 ```
 
-The comma evaluator is the same as `(begin)` in Racket, meaning that `a, b` would be evaluate `a`, then evaluate `b`, then return the value of `b`. 
+The comma evaluator is the same as `(begin)` in Racket, meaning that `a, b` would be evaluate `a`, then evaluate `b`, then return the value of `b`.
 
 What if there is whitespace before we reach the int?
 
@@ -51,6 +51,7 @@ int getInt() {
 Now we have finished our `getInt()` function.
 
 ## Mutation
+
 Basic Mutation: `set!` (set-bang). The `!` means that there is side-effects, more specifically a mutation side-effect.
 
 ```scheme
@@ -76,7 +77,7 @@ This example is not possible in pure Racket. The same expression cannot produce 
 ```scheme
 (define address-book empty)
 
-(define (add name number) 
+(define (add name number)
   (set! address-book (cons (list name number) address-book)))
 
 (define (lookup-helper name lst)
@@ -87,10 +88,11 @@ This example is not possible in pure Racket. The same expression cannot produce 
 (define (lookup name) (lookup-helper name address-book))
 ```
 
-This is an example of global data, since the data, address-book can be accessed everywhere in the program. This type of data is good for defining constants to be used repeatedly, but it is *not* good for global data that will be mutated. Also keep in mind any part of the program can change the global variable, and that will change the entire program. From the use of global variables, there will be hidden dependencies among different parts of the program, and that makes it harder to reason about the program.
+This is an example of global data, since the data, address-book can be accessed everywhere in the program. This type of data is good for defining constants to be used repeatedly, but it is _not_ good for global data that will be mutated. Also keep in mind any part of the program can change the global variable, and that will change the entire program. From the use of global variables, there will be hidden dependencies among different parts of the program, and that makes it harder to reason about the program.
 
 ### Application: Memoization
-There is a more primitive version of this called *caching*, which is saving the results of computation to avoid repeating it. *Memoization* is essentially systematic caching, meaning maintaining a list or table of cached values.
+
+There is a more primitive version of this called _caching_, which is saving the results of computation to avoid repeating it. _Memoization_ is essentially systematic caching, meaning maintaining a list or table of cached values.
 
 Consider the fibonacci function.
 
@@ -101,19 +103,18 @@ Consider the fibonacci function.
 		[else (+ (fib (sub1 n)) (fib (- n 2)))]))
 ```
 
-This is a very inefficient fibonacci function because recursive calls are repeated. Suppose you are to evaluate `(fib 100)` with this definition. Then it will evaluate `(fib 99) `and `(fib 98)`. To then evaluate `(fib 99)`, you need to evaluate `(fib 98)` and `(fib 97)`, and to evaluate `(fib 98)`, you need to evaluate `(fib 97)` and `(fib 96)`. Now you can see that there is repetition in the evaluations. To be specific, 
-```
-| Function      | Times Called  |
-| ------------- | ------------- |
-| (fib 100)     |       1       |
-| (fib 99)      |       1       |
-| (fib 98)      |       2       |
-| (fib 97)      |       3       |
-| (fib 96)      |       5       |
-| (fib 95)      |       7       |
-```
+This is a very inefficient fibonacci function because recursive calls are repeated. Suppose you are to evaluate `(fib 100)` with this definition. Then it will evaluate `(fib 99) `and `(fib 98)`. To then evaluate `(fib 99)`, you need to evaluate `(fib 98)` and `(fib 97)`, and to evaluate `(fib 98)`, you need to evaluate `(fib 97)` and `(fib 96)`. Now you can see that there is repetition in the evaluations. To be specific,
 
-Now that the function's runtime is proportionate to the size of the sequence. So `(fib n)` is about 1.6^n. 
+| Function  | Times Called |
+| --------- | ------------ |
+| (fib 100) | 1            |
+| (fib 99)  | 1            |
+| (fib 98)  | 2            |
+| (fib 97)  | 3            |
+| (fib 96)  | 5            |
+| (fib 95)  | 7            |
+
+Now that the function's runtime is proportionate to the size of the sequence. So `(fib n)` is about 1.6^n.
 
 To avoid repetition, you keep an association list of pairs (n, Fn).
 
@@ -132,13 +133,14 @@ To avoid repetition, you keep an association list of pairs (n, Fn).
 ```
 
 Notes from `(memo-fib n)`
-- `assoc`
-	- It is a built in function for association list lookup.
-	- `(assoc x lst)`: produces the pair (x y) from `lst`, or false if not found.
-	- Any value can be used as a test
-		- false is false; anything else is true
-	- `(cond [x => f]`: if x passes (meaning it isn't false), produce `(f x)`.
-	- Therefore, `(cond [result => second] ...` is equivalent to `(cond [(list? result) (second result)] ...`.
+
+-   `assoc`
+    -   It is a built in function for association list lookup.
+    -   `(assoc x lst)`: produces the pair (x y) from `lst`, or false if not found.
+    -   Any value can be used as a test
+        -   false is false; anything else is true
+    -   `(cond [x => f]`: if x passes (meaning it isn't false), produce `(f x)`.
+    -   Therefore, `(cond [result => second] ...` is equivalent to `(cond [(list? result) (second result)] ...`.
 
 The calls to `(memo-fib n)` now happens only once. Now the next question is that can we hide `fib-table`, the global variable.
 
@@ -153,6 +155,7 @@ The calls to `(memo-fib n)` now happens only once. Now the next question is that
 This code doesn't quite work for the address-book. In that case, two functions need access to it. It is left as an exercise to try to adapt this idea to work with multiple functions.
 
 ### Mutation in C
+
 An operator would perform a mutation ("assignment operator").
 
 ```c
@@ -183,7 +186,7 @@ int main() {
 
 ```
 
-There are almost no advantages to this knowledge, where as there are many disadvantages. `x = y = z = 0;` would set all of x, y, z to be 0. 
+There are almost no advantages to this knowledge, where as there are many disadvantages. `x = y = z = 0;` would set all of x, y, z to be 0.
 
 ```c
 int main() {
