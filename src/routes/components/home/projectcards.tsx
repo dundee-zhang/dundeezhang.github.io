@@ -54,9 +54,9 @@ const worksData: [
     string
 ][] = [
     [
-        "Portfolio Site",
+        "Portfolio and Blog Site",
         "TypeScript, React, CSS",
-        "An introduction website to show my projects and experience.",
+        "Website to show my projects, ideas, and experience.",
         "website.png",
         "dundeezhangv4",
         "Github Repository",
@@ -64,14 +64,14 @@ const worksData: [
         "https://dundeezhang.com",
     ],
     [
-        "Blog Page",
-        "TypeScript, React, Markdown",
+        "yourDoList",
+        "Python, Flask, SQL, GPT-4o",
         "My personal blog. Contains notes and articles I've written.",
-        "blog.png",
-        "dundeezhangv4",
+        "todo.png",
+        "todo",
         "Github Repository",
         "",
-        "https://dundeezhang.com/blog",
+        "/works/todo.mov",
     ],
     [
         "More Projects",
