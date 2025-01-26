@@ -66,7 +66,7 @@ const worksData: [
     [
         "yourDoList",
         "Python, Flask, SQL, GPT-4o",
-        "My personal blog. Contains notes and articles I've written.",
+        "To do list that generates subtasks for your main tasks.",
         "todo.png",
         "todo",
         "Github Repository",
