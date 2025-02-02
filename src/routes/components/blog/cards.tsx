@@ -18,13 +18,13 @@ const blogData: [string, string, string, string][] = [
     "CS 146 Lecture 8 Notes",
     "January 30, 2025",
     "Continuation of mutation in Racket and C; The box data structure.",
-    "cs146-lecture6",
+    "cs146-lecture8",
   ],
   [
     "CS 146 Lecture 7 Notes",
     "January 28, 2025",
     "Loops and mutation in C. No more recursion for everything.",
-    "cs146-lecture6",
+    "cs146-lecture7",
   ],
   [
     "CS 146 Lecture 6 Notes",
