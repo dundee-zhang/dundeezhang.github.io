@@ -2,8 +2,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import Home from "./routes/home";
-import Blog from "./routes/blog";
-import Reader from "./routes/components/reader";
 
 import "./routes/components/css/tableofcontent.css";
 import "./routes/components/css/background.css";
@@ -23,14 +21,6 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Home />,
-    },
-    {
-        path: "blog",
-        element: <Blog />,
-    },
-    {
-        path: "articles/:filename",
-        element: <Reader />,
     },
 ]);
 

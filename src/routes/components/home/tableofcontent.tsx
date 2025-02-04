@@ -5,6 +5,10 @@ export default function TableOfContents() {
         window.open("/resume.pdf", "_blank");
     };
 
+    const blogClick = () => {
+        window.open("https://blog.dhz.app", "_blank");
+    };
+
     return (
         <div className="table-of-content-wrapper">
             <div className="mobile-nav">
@@ -118,10 +122,8 @@ export default function TableOfContents() {
                 >
                     <ul className="table-of-content">
                         <a
-                            rel="noreferrer"
+                            onClick={blogClick}
                             className="table-of-content-text"
-                            href="/blog"
-                            target="_blank"
                         >
                             <span className="nav-span">
                                 Blog <i className="fa fa-external-link"></i>

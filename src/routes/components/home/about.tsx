@@ -48,7 +48,7 @@ export default function About() {
                 <p className="about-me-ptext">
                     I also maintain and update my blog when I have time. Check
                     it out here{" "}
-                    <a href="/blog">
+                    <a href="https://blog.dhz.app">
                         <span className="about-me-paragraph link-hover">
                             [link]
                         </span>
