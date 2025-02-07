@@ -8,7 +8,8 @@ span.about-me-paragraph {
     background: radial-gradient(
         circle at 100%,
         rgb(112, 92, 4),
-        rgb(150, 136, 4)
+        rgb(150, 136, 4),
+        rgb(112, 92, 4)
     );
     font-weight: 600;
     background-size: 200% auto;
@@ -19,7 +20,12 @@ span.about-me-paragraph {
 }
 
 span.link-hover:hover {
-    background: radial-gradient(circle at 100%, rgb(0, 0, 0), rgb(34, 34, 34));
+    background: radial-gradient(
+        circle at 100%,
+        rgb(0, 0, 0),
+        rgb(34, 34, 34),
+        rgb(0, 0, 0)
+    );
     font-weight: 600;
     background-size: 200% auto;
     color: #000;
@@ -39,7 +45,8 @@ span.link-hover:hover {
         background: radial-gradient(
             circle at 100%,
             rgb(218, 207, 90),
-            rgb(214, 211, 182)
+            rgb(214, 211, 182),
+            rgb(218, 207, 90)
         );
         font-weight: 600;
         background-size: 200% auto;
@@ -53,7 +60,8 @@ span.link-hover:hover {
         background: radial-gradient(
             circle at 100%,
             rgb(255, 255, 255),
-            rgb(209, 209, 209)
+            rgb(209, 209, 209),
+            rgb(255, 255, 255)
         );
         font-weight: 600;
         background-size: 200% auto;
