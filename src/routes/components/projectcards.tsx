@@ -72,7 +72,7 @@ const worksData: [
     ],
     [
         "Auranate",
-        "Python, Flask, JavaScript",
+        "Flask, JavaScript, Firebase",
         "AI toolset to prepare and help people in the workforce.",
         "aura.png",
         "aura",
